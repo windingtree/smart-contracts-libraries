@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT;
-pragma solidity 0.5.17;
+pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/introspection/ERC165.sol";
 
 /**
- * @dev Custom implementation of the {IERC165} interface.
+ * @dev Custom implementation of the IERC165 interface.
  * This is contract implemented by OpenZeppelin but extended with
  * _removeInterface function
  */
