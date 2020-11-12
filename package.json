@@ -1,7 +1,10 @@
 {
   "name": "@windingtree/smart-contracts-libraries",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Libraries and utilities for smart contracts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Tests are skipped for now\""
   },
