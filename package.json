@@ -1,6 +1,6 @@
 {
   "name": "@windingtree/smart-contracts-libraries",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Libraries and utilities for smart contracts",
   "publishConfig": {
     "access": "public"
@@ -27,7 +27,9 @@
     "url": "https://github.com/windingtree/smart-contracts-libraries/issues"
   },
   "homepage": "https://github.com/windingtree/smart-contracts-libraries#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@openzeppelin/contracts": "3.2.0"
+  },
   "devDependencies": {
     "solc": "0.7.4",
     "solhint": "3.3.2",
