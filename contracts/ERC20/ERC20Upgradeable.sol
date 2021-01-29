@@ -1,23 +1,24 @@
 // SPDX-License-Identifier: MIT
 
-// SPDX-License-Identifier: MIT
-
 pragma solidity ^0.6.0;
 
+import "@openzeppelin/upgrades-core/contracts/Initializable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 /**
- * @dev Easy configurable token
+ * @dev Easy configurable and upgradeable token
  */
-contract ERC20Configurable is ERC20 {
+contract ERC20Upgradeable is Initializable, ERC20 {
 
     /// @dev Token constructor
-    constructor(
+    initialize(
       string memory name,
       string memory symbol,
       uint8 decimals,
       uint256 supply
-    ) public ERC20(name, symbol) {
+    ) public initializer {
+        _name = name;
+        _symbol = symbol;
         _setupDecimals(decimals);
         _mint(msg.sender, supply);
     }
