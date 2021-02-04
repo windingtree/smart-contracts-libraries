@@ -1,6 +1,6 @@
 {
   "name": "@windingtree/smart-contracts-libraries",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Libraries and utilities for smart contracts",
   "publishConfig": {
     "access": "public"
@@ -28,13 +28,14 @@
   },
   "homepage": "https://github.com/windingtree/smart-contracts-libraries#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "3.3.0",
+    "@openzeppelin/contracts": "3.4.0",
+    "@openzeppelin/contracts-upgradeable": "3.4.0",
     "@openzeppelin/upgrades-core": "1.5.0"
   },
   "devDependencies": {
     "solc": "0.8.1",
     "solhint": "3.3.2",
-    "truffle": "5.1.63",
+    "truffle": "5.1.64",
     "@truffle/hdwallet-provider": "1.2.1"
   }
 }
